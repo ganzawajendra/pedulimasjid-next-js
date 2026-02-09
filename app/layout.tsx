@@ -26,11 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+      <body 
         className={`${montserrat.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <div className="px-20">
+        <div id="layout-body" className="px-20">
         {children}
         </div>
       </body>

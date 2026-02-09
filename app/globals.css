@@ -22,6 +22,10 @@
   }
 } */
 
+@theme {
+  --spacing : 8px;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -30,4 +34,44 @@ body {
 
 #navbar{
   background-color: var(--secondColor);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #layout-body, #navbar {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #layout-body, #navbar {
+    padding-left: calc(var(--spacing) * 1);
+    padding-right: calc(var(--spacing) * 1);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #layout-body, #navbar {
+    padding-left: calc(var(--spacing) * 3);
+    padding-right: calc(var(--spacing) * 3);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #layout-body, #navbar {
+    padding-left: calc(var(--spacing) * 5);
+    padding-right: calc(var(--spacing) * 5);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #layout-body, #navbar {
+    padding-left: calc(var(--spacing) * 10);
+    padding-right: calc(var(--spacing) * 10);
+  }
 }
